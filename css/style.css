@@ -1,0 +1,495 @@
+body {
+  /*min-width: 1200px;*/
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 30px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  letter-spacing: normal;
+  /*font-weight: 300;*/
+  /*color: #464646;*/
+  background-color: #ffffff;
+  /*background-color: lightblue;*/
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "GilroyExtraBold";
+  font-weight: 700;
+  font-style: bold;
+  src: 
+    url("/fonts/web/gilroyextrabold.woff") format("woff"),
+    url("/fonts/web/gilroyextrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GilroyLight";
+  font-weight: lighter;
+  font-style: normal;
+  src: 
+    url("/fonts/web/gilroylight.woff") format("woff"),
+    url("/fonts/web/gilroylight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  font-style: normal;
+  src: 
+    url("/fonts/web/opensans.woff") format("woff"),
+    url("/fonts/web/opensans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "OpenSansLight";
+  font-weight: lighter;
+  font-style: normal;
+  src: 
+    url("/fonts/web/opensanslight.woff") format("woff"),
+    url("/fonts/web/opensanslight.woff2") format("woff2");
+}
+
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1160px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  /*outline: solid red;*/
+  padding-top: 0;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+
+/*.page-header__title {
+  margin-top: ;
+}*/
+
+.page-header .container{
+  background-color: #f7e296;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 50px;
+}
+
+.page-header {
+  position: relative;
+}
+
+.page-header__logo {
+  position: absolute;
+  top: -20px;
+}
+
+.page-header li {
+  list-style: none;
+  /*outline: solid blue;*/
+}
+
+.page-header a {
+  /*text-decoration: none;*/
+  color: #000000;
+}
+
+.user-block,
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*background-color: aqua;*/
+  padding: 0;
+  margin: 0;
+  /*outline: solid black;*/
+}
+
+.user-block__search {
+  */background-color: beige;*/
+  padding: 0;
+  margin: 0;
+}
+
+.user-block__list {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  
+}
+
+.main-nav {
+  height: 200px;
+}
+
+.main-nav__item {
+  text-transform: uppercase;
+  letter-spacing: 5.5px;
+  font-family: "GilroyExtraBold";
+  font-weight: 600;
+  line-height: 18px;
+  /*padding-bottom: 166px;*/
+}
+
+.main-nav__item--catalog {
+  margin-right: 250px;
+  box-sizing: border-box;
+}
+
+.sub-nav {
+  display: none;
+  position: absolute;
+  left: 140px;
+  width: 1160px;
+  
+ 
+  letter-spacing: 1.2px;
+  text-transform: capitalize;
+  font-weight: normal;
+  z-index: 10;
+  margin-bottom: 0;
+  padding-left: 60px;
+  padding-bottom: 68px;
+  background-color: #f7e296;
+  box-sizing: border-box;
+  /*outline: solid red;*/
+  
+}
+
+.sub-nav__list {
+  display: non;
+  padding-left: 0;
+  padding-right: 15px;
+}
+
+.sub-nav__item {
+  width: 210px;
+  padding-top: 20px;
+}
+
+.sub-nav__list:last-chil {
+  background-color: red;
+  padding-right: 310px;
+}
+
+.main-nav__item--catalog {
+  /*background-color: red;*/
+}
+
+.main-nav__item--catalog:hover .sub-nav {
+  display: flex;
+}
+
+h2 {
+  font-family: "GilroyExtraBold";
+  font-size: 47px;
+  line-height: 70px;
+}
+
+.promo-slider {
+  /*min-height: 470px;*/
+  margin-top: -230px;
+}
+
+.promo-slider__item {
+  heigh: 490px;
+  display: flex;
+  justify-content: flex-end;
+  position: absolut;
+  position: relative;
+  /*outline: solid black;*/
+}
+
+.promo-slider__content {
+  /*outline: solid red;*/
+  position: relative;
+  width: 560px;
+  min-height: 490px;
+  margin-left: 100px;
+}
+
+.promo-slider__number {
+  position: absolute;
+  top: 61px;
+  left: 300px;
+  font-family: "GilroyExtraBold";
+  font-size: 179.2px;
+  color: #ffffff;
+}
+
+.popular .container {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 200px;
+}
+
+.popular__item {
+  margin-right: 40px;
+}
+
+.popular__item:last-child {
+  margin-right: 0;
+}
+
+.popular__img {
+  width: 160px;
+  height: 160px;
+  background-color: #f7e296;
+  background-position: center center;
+}
+
+.service-slider {
+  width: 100%;
+  height: 290px;
+  background-color: #e5e5e5;
+}
+
+.service-slider .container {
+  display: flex;
+}
+
+.service-slider__title {
+  /*outline: solid red;*/
+}
+
+.service-slider__content {
+  width: 600px;
+  margin-top: -80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  /*outline: solid red; */
+}
+
+.service-slider__img {
+  margin-top: -20px;
+  /*outline: solid red; */
+}
+
+.service-slider__content--warranty {
+  display: none;
+}
+
+.service-slider__title--warranty:hover  .service-slider__content--warranty {
+  display: block;
+}
+
+.brands .container {
+  /*display: flex;
+  flex-direction: row;
+  justify-content: space-around;*/
+}
+
+.brands__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands__item {
+  /*outline: solid red;*/
+}
+
+.information .container {
+  display: flex;
+}
+
+.contacts {
+  width: 500px;
+}
+
+.about-us {
+  width: 500px;
+  margin-right: 100px;
+}
+
+.page-footer {
+  width: 100%;
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.page-footer a {
+  color: #ffffff;
+}
+
+.page-footer__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.page-footer__user {
+  display: flex;
+  list-style: none;
+}
+
+.page-footer__item {
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.page-footer__middle {
+  display: flex;
+  /*justify-content: space-between;*/
+  margin-bottom: 30px;
+}
+
+.page-footer__nav {
+  display: flex;
+  /*width: 355px;*/
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page-footer__warranty,
+.page-footer__delivery {
+  padding-right: 33px;
+}
+
+.page-footer__bottom {
+  display: flex;
+  /*justify-content: space-between;*/
+  padding-bottom: 50px;
+}
+
+.page-footer__bottom::before {
+  content: "";
+  position: absolut;
+  top: ;
+  left: ;
+  width: 60px;
+  height: 10px;
+  background-color: #ffc600;
+}
+
+.page-footer__social {
+  margin: 0 auto;
+}
+
+
+.main-nav__catalog {
+  height: 50px;
+}
+
+.breadcrumps__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.breadcrumps__list li {
+  padding-right: 20px;
+}
+
+.product {
+  background:
+    linear-gradient(180deg, #dcdcdc 70px, #eeeeee 70px),
+    linear-gradient(180deg, #efefef 70px, #ffffff 70px);
+  background-position: 0%, 36.9%;
+  background-size: 36.9% 100%, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  /*outline: solid red;
+  background: lightblue;*/
+}
+
+
+.product__wrapper {
+  display: flex;
+}
+
+.filter {
+  width: 210px;
+  padding-right: 60px;
+  padding-left: 270px;
+  outline: solid black;
+}
+
+.filter__title {
+  
+}
+
+.filter__title h3 {
+  margin: 0;
+  padding: 20px;
+}
+
+.sorting {
+  width: 850px;
+  margin: 0;
+  padding: 0;
+  padding-left: 70px;
+  outline: solid black;
+}
+
+.sorting__range {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  outline: solid black;
+}
+
+.sorting__category {
+  display: flex;
+  list-style: none;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__wrapper {
+  margin-right: 50px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  margin: 50px 0;
+  margin-right: 80px;
+}
+
+.pagination__list {
+  list-style: none;
+  display: flex;
+}
+
+.pagination__item {
+  margin-right: 50px;
+}
