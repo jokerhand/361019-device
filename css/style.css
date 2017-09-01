@@ -336,12 +336,69 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
+.user-block__item {
+  position: relative;
+}
+
+.user-block__item--enter a{
+  padding-left: 25px;
+}
+
+.user-block__item--enter::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 0px;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/user.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.user-block__item--compare a {
+  padding-right: 5px;
+}
+
+.user-block__item--compare::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/compare.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.user-block__item--cart::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: -25px;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/cart.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.user-block__item--logout {
+  opacity: 0.3;
+  margin-right: 85px;
+}
+
 .main-nav {
   min-height: 183px;
 }
 
 .main-nav__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   padding: 0;
@@ -349,6 +406,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-nav__item {
+  position: relative;
   text-transform: uppercase;
   letter-spacing: 3.4px;
   font-family: "GilroyExtraBold", "Arial", sans-serif;
@@ -377,6 +435,20 @@ input[type="radio"].visually-hidden {
   margin-right: -4px;
 }
 
+.main-nav__item--catalog::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 1px;
+  left: 230px;
+  width: 15px;
+  height: 15px;
+  background-image: url("/img/plus.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
 .main-nav__item--catalog:hover .sub-nav {
   display: flex;
 }
@@ -384,7 +456,7 @@ input[type="radio"].visually-hidden {
 .sub-nav {
   display: none;
   position: absolute;
-  left: 140px;
+  left: -60px;
   width: 1160px;
   z-index: 10;
   margin-bottom: 0;
