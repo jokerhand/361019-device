@@ -11,37 +11,37 @@
        <div class="container">
          <h1 class="page-header__title  visually-hidden">Device</h1>
          <a class="page-header__logo" href="index.html">
-           <img src="/img/logo.png" width="164" height="36" alt="Логотип Device">
+           <img src="img/logo.png" width="164" height="36" alt="Логотип Device">
          </a>
          <div class="user-block">
            <form class="user-block__search" action="https://echo.htmlacademy.ru" method="get">
-             <a>Поиск</a>
+             <a><span class="visually-hidden">Поиск</span></a>
              <label for="search"></label>
              <input type="search" id="search" placeholder="Поиск по сайту">
              <button class="user-block__btn" type="submit">Найти</button>
            </form>
            <ul class="user-block__list  unidentified  visually-hidden">
-             <li class="user-block__item  user-block__item--enter">
+             <li class="user-block__enter">
                <a href="#">Войти</a>
              </li>
-             <li class="user-block__item  user-block__item--compare">
+             <li class="user-block__compare">
                <a href="#">Сравнить</a>
              </li>
-             <li class="user-block__item  user-block__item--cart">
+             <li class="user-block__cart">
                <a href="#">Корзина</a>
              </li>
            </ul>
            <ul class="user-block__list  identified">
-             <li class="user-block__item  user-block__item--enter">
+             <li class="user-block__enter">
                <a href="#">Валентин Петухов</a>
              </li>
-             <li class="user-block__item  user-block__item--logout">
+             <li class="user-block__logout">
                <a href="#">Выйти</a>
              </li>
-             <li class="user-block__item  user-block__item--compare">
+             <li class="user-block__compare">
                <a href="#">Сравнить</a>
              </li>
-             <li class="user-block__item  user-block__item--cart">
+             <li class="user-block__cart">
                <a href="#">Корзина</a>
              </li>
            </ul>
@@ -91,31 +91,29 @@
        </div>
      </header>
      <main>
-       <section class="breadcrumps">
-         <div class="container">
-         <h2 class="breadcrumps__title">Моноподы для селфи</h2>
-         <ul class="breadcrumps__list">
+      <section class="breadcrumps">
+        <div class="container">
+          <h2 class="breadcrumps__title">Моноподы для селфи</h2>
+          <ul class="breadcrumps__list">
            <li>
              <a href="index.html">Главная</a>
            </li>
            <li>
              <a href="catalog.html">Каталог товаров</a>
            </li>
-           <li>
-             <a class="breadcrumps__active">Моноподы для селфи</a>
+           <li class="breadcrumps__active">
+             <a>Моноподы для селфи</a>
            </li>
          </ul>
         </div>
        </section>
        <div class="catalog">
          <div class="catalog__wrapper  container">
-    
            <section class="filter">
              <div class="filter__title">
                <h3>Фильтр:</h3>
              </div>
              <form class="filter__form" action="https://htmlacademy.ru/" method="get">
-               
                <fieldset class="filter__item  filter__item--price  range">
                  <legend class="filter__name">Стоимость</legend>
                  <div class="range__slider">
@@ -155,137 +153,137 @@
            </section>
            <section class="sorting">
              <div class="sorting__wrapper">
-             <div class="sorting__range">
-               <h3 class="sorting__title">Сортировка:</h3>
-               <ul class="sorting__category">
-                 <li>
-                   <a class="sorting__item  active">По цене</a>
-                 </li>
-                 <li>
-                   <a class="sorting__item" href="#">По типу</a>
-                 </li>
-                 <li>
-                   <a class="sorting__item" href="#">По популярности</a>
-                 </li>
-               </ul>
-               <div class="sorting__arrows">
-                 <a class="sorting__btn  sorting__btn--up  sorting__btn--active">По возрастанию</a>
-                 <a class="sorting__btn  sorting__btn--down  active">По убыванию</a>
+               <div class="sorting__range">
+                 <h3 class="sorting__title">Сортировка:</h3>
+                 <ul class="sorting__category">
+                   <li>
+                     <a class="sorting__item  active">По цене</a>
+                   </li>
+                   <li>
+                     <a class="sorting__item" href="#">По типу</a>
+                   </li>
+                   <li>
+                     <a class="sorting__item" href="#">По популярности</a>
+                   </li>
+                 </ul>
+                 <div class="sorting__arrows">
+                   <a class="sorting__btn  sorting__btn--up  sorting__btn--active"><span class="visually-hidden">По возрастанию</span></a>
+                   <a class="sorting__btn  sorting__btn--down  active"><span class="visually-hidden">По убыванию</span></a>
+                 </div>
+               </div>
+               <div class="product">
+                 <article class="product__item">
+                   <div class="product__wrapper">
+                     <a class="product__image" href="#">
+                       <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+                     </a>
+                     <div class="product__hover">
+                       <a class="product__cart  btn" href="#">В корзину</a>
+                       <a class="product__compare" href="#">Добавить к сравнению</a>
+                     </div>
+                   </div>
+                   <div class="product__inner">
+                     <h3 class="product__title">
+                       <a href="#">Любительская селфи-палка</a>
+                     </h3>
+                     <span class="product__price">500 руб.</span>
+                   </div>
+                 </article>
+                 <article class="product__item">
+                   <div class="product__wrapper">
+                     <a class="product__image" href="#">
+                       <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+                     </a>
+                     <div class="product__hover">
+                       <a class="product__cart  btn" href="#">В корзину</a>
+                       <a class="product__compare" href="#">Добавить к сравнению</a>
+                     </div>
+                   </div>
+                   <div class="product__inner">
+                     <h3 class="product__title">
+                       <a href="#">Профессиональная селфи-палка</a>
+                     </h3>
+                     <span class="product__price">1 500 руб.</span>
+                   </div>
+                 </article>
+                 <article class="product__item">
+                   <div class="product__wrapper">
+                     <a class="product__image" href="#">
+                       <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+                     </a>
+                     <div class="product__hover">
+                       <a class="product__cart  btn" href="#">В корзину</a>
+                       <a class="product__compare" href="#">Добавить к сравнению</a>
+                     </div>
+                   </div>
+                   <div class="product__inner">
+                     <h3 class="product__title">
+                       <a href="#">Непотопляемая селфи-палка</a>
+                     </h3>
+                     <span class="product__price">2 500 руб.</span>
+                   </div>
+                 </article>
+                 <article class="product__item">
+                   <div class="product__wrapper  product__wrapper--new">
+                     <a class="product__image" href="#">
+                       <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                     </a>
+                     <div class="product__hover">
+                       <a class="product__cart  btn" href="#">В корзину</a>
+                       <a class="product__compare" href="#">Добавить к сравнению</a>
+                     </div>
+                   </div>
+                   <div class="product__inner">
+                     <h3 class="product__title">
+                       <a href="#">Селфи-палка «Следуй за мной»</a>
+                     </h3>
+                     <span class="product__price">4 900 руб.</span>
+                   </div>
+                 </article>
+               </div>
+               <div class="pagination">
+                 <a class="pagination__back" href="#">Назад</a>
+                 <ul class="pagination__list">
+                   <li class="pagination__item  pagination__active">1</li>
+                   <li class="pagination__item">
+                     <a href="#">2</a>
+                   </li>
+                   <li class="pagination__item">
+                     <a href="#">3</a>
+                   </li>
+                 </ul>
+                 <a class="pagination__forward" href="#">Вперед</a>
                </div>
              </div>
-            <div class="product">
-             <article class="product__item">
-               <div class="product__wrapper">
-                 <a class="product__image" href="#">
-                   <img src="/img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-                 </a>
-                 <div class="product__hover">
-                   <a class="product__cart  btn" href="#">В корзину</a>
-                   <a class="product__compare" href="#">Добавить к сравнению</a>
-                 </div>
-               </div>
-               <div class="product__inner">
-                 <h3 class="product__title">
-                   <a href="#">Любительская селфи-палка</a>
-                 </h3>
-                 <span class="product__price">500 руб.</span>
-               </div>
-             </article>
-             <article class="product__item">
-               <div class="product__wrapper">
-                 <a class="product__image" href="#">
-                   <img src="/img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                 </a>
-                 <div class="product__hover">
-                   <a class="product__cart  btn" href="#">В корзину</a>
-                   <a class="product__compare" href="#">Добавить к сравнению</a>
-                 </div>
-               </div>
-               <div class="product__inner">
-                 <h3 class="product__title">
-                   <a href="#">Профессиональная<br>селфи-палка</a>
-                 </h3>
-                 <span class="product__price">1 500 руб.</span>
-               </div>
-             </article>
-             <article class="product__item">
-               <div class="product__wrapper">
-                 <a class="product__image" href="#">
-                   <img src="/img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                 </a>
-                 <div class="product__hover">
-                   <a class="product__cart  btn" href="#">В корзину</a>
-                   <a class="product__compare" href="#">Добавить к сравнению</a>
-                 </div>
-               </div>
-               <div class="product__inner">
-                 <h3 class="product__title">
-                   <a href="#">Непотопляемая селфи-палка</a>
-                 </h3>
-                 <span class="product__price">2 500 руб.</span>
-               </div>
-             </article>
-             <article class="product__item">
-               <div class="product__wrapper">
-                 <a class="product__image" href="#">
-                   <img src="/img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-                 </a>
-                 <div class="product__hover">
-                   <a class="product__cart  btn" href="#">В корзину</a>
-                   <a class="product__compare" href="#">Добавить к сравнению</a>
-                 </div>
-               </div>
-               <div class="product__inner">
-                 <h3 class="product__title">
-                   <a href="#">Селфи-палка «Следуй за мной»</a>
-                 </h3>
-                 <span class="product__price">4 900 руб.</span>
-               </div>
-             </article>
-             </div>
-            <div class="pagination">
-             <a class="pagination__back" href="#">Назад</a>
-             <ul class="pagination__list">
-               <li class="pagination__item  pagination__active">1</li>
-               <li class="pagination__item">
-                 <a href="#">2</a>
-               </li>
-               <li class="pagination__item">
-                 <a href="#">3</a>
-               </li>
-             </ul>
-             <a class="pagination__forward" href="#">Вперед</a>
-            </div>
-          </div>
-        </section>
+           </section>
+         </div>
        </div>
-      </div>
      </main>
      <footer class="page-footer  page-footer--catalog">
        <div class="page-footer__wrapper  container">
-         <div class="page-footer__top  page-footer__top--catalog">
+         <div class="page-footer__top">
            <a class="page-footer__logo" href="index.html">
-             <img src="/img/logofooter.png" width="163" height="36" alt="Логотип Device">
+             <img src="img/logofooter.png" width="163" height="36" alt="Логотип Device">
            </a>
-           <ul class="user-block  user-block--footer  unidentidied  visually-hidden">
-             <li class="user-block__item  user-block__item--enter">
+           <ul class="user-menu  unidentified  visually-hidden">
+             <li class="user-menu__enter">
                <a href="#">Войти</a>
              </li>
-             <li class="user-block__item  user-block__item--compare">
+             <li class="user-menu__compare">
                <a href="#">Сравнить</a>
              </li>
-             <li class="user-block__item  user-block__item--cart">
+             <li class="user-menu__cart">
                <a href="#">Корзина</a>
              </li>
            </ul>
-           <ul class="user-block  user-block--footer  identidied">
-             <li>
-               <a class="user-block__item" href="#">Выйти</a>
+           <ul class="user-menu  identified">
+             <li class="user-menu__logout">
+               <a href="#">Выйти</a>
              </li>
-             <li class="user-block__item  user-block__item--compare">
+             <li class="user-menu__compare">
                <a href="#">Сравнить</a>
              </li>
-             <li class="user-block__item  user-block__item--cart">
+             <li class="user-menu__cart">
                <a href="#">Корзина</a>
              </li>
            </ul>
@@ -307,28 +305,16 @@
          </div>
          <div class="page-footer__bottom">
            <div class="social">
-             <a href="#">Facebook
-               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
-                 <path fill="#FFF" d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16c8.837 0 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.021v3.444h3.021v3.445h-3.021v8.61H14.02v-8.61H11v-3.445h3.021V9.455c0-1.902 1.353-3.445 3.021-3.445h3.021v3.445z"/>
-               </svg>
+             <a class="social__fb" href="#"><span class="visually-hidden">Facebook></span>
              </a>
-             <a href="#">Instagram
-               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve"><g>
-                 <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
-                 <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
-                 <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
-                 <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0zM23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/></g>
-               </svg>
+             <a class="social__in" href="#"><span class="visually-hidden">Instagram</span>
              </a>
-             <a href="#">Twitter
-               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#FFF" d="M16 0C7.164 0 0 7.164 0 16c0 8.837 7.164 16 16 16 8.837 0 16-7.163 16-16 0-8.836-7.163-16-16-16zm7.944 12.809c-.251 6.516-3.463 10.832-10.992 10.702h-.486c-.447 0-4.543-.443-5.344-1.823 2.479.19 4.247-.406 5.12-1.136-1.048-.289-2.923-.461-3.251-2.848.384.104.618.221 1.299.113-1.307-.824-2.758-1.519-2.679-3.643.311.317 1.164.518 1.46.457-.768-.233-2.149-3.244-.974-4.781 1.984 1.79 4.075 3.482 7.804 3.643.227-2.214 1.24-3.699 3.168-4.325 1.84-.479 3.255.26 3.901 1.138.737-.224 1.453-.466 2.193-.685-.004.833-.569 1.463-.935 1.709.747.165 1.423-.475 1.423-.475-.184.963-1.094 1.725-1.707 1.954z"/>
-               </svg>
+             <a class="social__tw" href="#"><span class="visually-hidden">Twitter</span>
              </a>
            </div>
            <div class="page-footer__copyright">
-             <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
-               <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09"><path fill="#FFC600" d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/>
-               </svg>
+             <a href="https://htmlacademy.ru/intensive/htmlcss">
+               <span class="visually-hidden">HTML Academy</span>
              </a>
            </div>
          </div>
